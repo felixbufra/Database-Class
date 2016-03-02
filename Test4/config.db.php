@@ -84,24 +84,25 @@ class DB
     {
         $insertQuery = "INSERT INTO $this->table (";
         $selectQuery = "SELECT * FROM $this->table WHERE ";
+
         foreach ($values as $key => $value) {
-            $insertKeys[] = $key;
-            if (is_string($value)) {
-                $value = "'$value'";
-            }
-            $insertValues[] = $value;
+          $insertKeys[] = $key;
+          if (is_string($value)) {
+          $value = "'$value'";
+          }
+          $insertValues[] = $value;
+
         }
+
         $insertKeys = implode(", ",$insertKeys);
         $insertValues = implode(", ",$insertValues);
         $insertQuery .= "$insertKeys) values ";
         $insertQuery .= "($insertValues)";
 
-
-
         foreach ($values as $key => $value) {
             $selectParts[] = "$key = '$value' ";
         }
-            $selectParts = implode("AND ", $selectParts);
+            $ selectParts = implode("AND ", $selectParts);
             $selectQuery .= "$selectParts";
 
         $check = mysqli_query($this->link, $selectQuery);
