@@ -102,7 +102,7 @@ class DB
         foreach ($values as $key => $value) {
             $selectParts[] = "$key = '$value' ";
         }
-            $ selectParts = implode("AND ", $selectParts);
+            $selectParts = implode("AND ", $selectParts);
             $selectQuery .= "$selectParts";
 
         $check = mysqli_query($this->link, $selectQuery);
