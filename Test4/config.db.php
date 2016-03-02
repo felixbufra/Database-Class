@@ -68,20 +68,20 @@ class DB
     }
 
     // Insert method
+
+    /**
+    *The $insertQuery and $selectQuery consists of some parts, the first part is everytime the same,
+    *with a foreach loop, the keys and values get written in the Query.
+    *To insert a record, change the values and keys in index.php
+    *
+    *@param string $insertQuery
+    *@param string $selectQuery
+    *@param array $insertKeys
+    *@param array $insertValues
+    *@param array $selectParts
+    */
     public function insert($values)
     {
-
-        /**
-        *The $insertQuery and $selectQuery consists of some parts, the first part is everytime the same,
-        *with a foreach loop, the keys and values get written in the Query.
-        *To insert a record, change the values and keys in index.php
-        *
-        *@param string $insertQuery
-        *@param string $selectQuery
-        *@param array $insertKeys
-        *@param array $insertValues
-        *@param array $selectParts
-        */
         $insertQuery = "INSERT INTO $this->table (";
         $selectQuery = "SELECT * FROM $this->table WHERE ";
         foreach ($values as $key => $value) {

@@ -67,13 +67,13 @@ foreach( $results as $row )
 
 // ===Insert===
 //
-// $insert = new Projekt();
-//  $values = array(
-//  "Vorname" => "Moritz",
-//  "Nachname" => "Mustermann",
-//  "Geburtsjahr" => 1991
-//     );
-// $result = $insert->insertData($values);
+$insert = new Projekt();
+ $values = array(
+ "Vorname" => "Moritz",
+ "Nachname" => "Mustermann",
+ "Geburtsjahr" => 1991
+    );
+$result = $insert->insertData($values);
 //
 
 //====Update========
