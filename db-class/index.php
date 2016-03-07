@@ -4,39 +4,36 @@ error_reporting(E_ALL);
 ini_set('display_errors', '1');
 require_once( 'class.projekt.php' );
 
-$get = new Projekt();
-$sqlQuery = "SELECT * FROM Klassenliste WHERE Geburtsjahr = 1998";
-$results = $get->get($sqlQuery);
-foreach( $results as $row )
-{
-    echo 'ID: '. $row['ID'] .'<br />';
-    echo 'Name: '. $row['Vorname'] .' ';
-    echo $row['Nachname'] .'<br />';
-    echo 'Geburtsjahr: '. $row['Geburtsjahr'] .'<br /><br />';
-
-}
-
-// $resultByID = new Projekt();
-// $id = "22";
-// $results = $resultByID->getID( $id );
+// $get = new Projekt();
+// $sqlQuery = "SELECT * FROM pp2_project_master";
+// $results = $get->get($sqlQuery);
 // foreach( $results as $row )
 // {
-//     echo 'ID: '. $row['ID'] .'<br />';
-//     echo 'Name: '. $row['Vorname'] .' ';
-//     echo $row['Nachname'] .'<br />';
-//     echo 'Geburtsjahr: '. $row['Geburtsjahr'] .'<br /><br />';
+//  echo 'project_id: '. $row['project_id'] .'<br />';
+//  echo 'project_name: '. $row['project_name'] .'<br /> ';
+//  echo 'weatherAPI_name: '. $row['weatherAPI_name'] .'<br /> <br />';
 
 // }
 
-// $resultByVorname = new Projekt();
-// $vorname = "Felix";
-// $results = $resultByVorname->getVorname( $vorname );
+// $resultByID = new Projekt();
+// $id = "173074";
+// $results = $resultByID->getID( $id );
 // foreach( $results as $row )
 // {
-//     echo 'ID: '. $row['ID'] .'<br />';
-//     echo 'Name: '. $row['Vorname'] .' ';
-//     echo $row['Nachname'] .'<br />';
-//     echo 'Geburtsjahr: '. $row['Geburtsjahr'] .'<br /><br />';
+//     echo 'project_id: '. $row['project_id'] .'<br />';
+//     echo 'project_name: '. $row['project_name'] .'<br /> ';
+//     echo 'weatherAPI_name: '. $row['weatherAPI_name'] .'<br />';
+//
+// }
+
+// $resultByProject = new Projekt();
+// $project = "Vardenis";
+// $results = $resultByProject->getProject( $project );
+// foreach( $results as $row )
+// {
+//     echo 'project_id: '. $row['project_id'] .'<br />';
+//     echo 'project_name: '. $row['project_name'] .'<br /> ';
+//     echo 'weatherAPI_name: '. $row['weatherAPI_name'] .'<br />';
 //
 // }
 
@@ -45,11 +42,10 @@ foreach( $results as $row )
 // $results = $resultByNachname->getNachname( $nachname );
 // foreach( $results as $row )
 // {
-//     echo 'ID: '. $row['ID'] .'<br />';
-//     echo 'Name: '. $row['Vorname'] .' ';
-//     echo $row['Nachname'] .'<br />';
-//     echo 'Geburtsjahr: '. $row['Geburtsjahr'] .'<br /><br />';
-
+//     echo 'project_id: '. $row['project_id'] .'<br />';
+//     echo 'project_name: '. $row['project_name'] .'<br /> ';
+//     echo 'weatherAPI_name: '. $row['weatherAPI_name'] .'<br />';
+//
 // }
 
 // $resultByGeburtsjahr = new Projekt();
@@ -57,23 +53,22 @@ foreach( $results as $row )
 // $results = $resultByGeburtsjahr->getGeburtsjahr( $sqlbefehl );
 // foreach( $results as $row )
 // {
-//     echo 'ID: '. $row['ID'] .'<br />';
-//     echo 'Name: '. $row['Vorname'] .' ';
-//     echo $row['Nachname'] .'<br />';
-//     echo 'Geburtsjahr: '. $row['Geburtsjahr'] .'<br /><br />';
+//     echo 'project_id: '. $row['project_id'] .'<br />';
+//     echo 'project_name: '. $row['project_name'] .'<br /> ';
+//     echo 'weatherAPI_name: '. $row['weatherAPI_name'] .'<br />';
 //
 // }
 
 
 // ===Insert===
-//
-$insert = new Projekt();
- $values = array(
- "Vorname" => "Moritz",
- "Nachname" => "Mustermann",
- "Geburtsjahr" => 1991
-    );
-$result = $insert->insertData($values);
+// //
+// $insert = new Projekt();
+//  $values = array(
+//  "Vorname" => "Moritz",
+//  "Nachname" => "Mustermann",
+//  "Geburtsjahr" => 1991
+//     );
+// $result = $insert->insertData($values);
 //
 
 //====Update========

@@ -29,7 +29,7 @@ Class Projekt extends DB
 */
 
 public function getID($id){
-    return $this->get("SELECT * FROM $this->table WHERE ID = '$id'");
+    return $this->get("SELECT * FROM $this->table WHERE project_id = '$id'");
 
 }
 
@@ -39,8 +39,8 @@ public function getID($id){
 *@param string $vorname
 */
 
-public function getVorname($vorname){
-    return $this->get("SELECT * FROM $this->table WHERE Vorname = '$vorname'");
+public function getProject($project){
+    return $this->get("SELECT * FROM $this->table WHERE project_name = '$project'");
 
 }
 

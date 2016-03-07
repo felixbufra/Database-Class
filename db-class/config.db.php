@@ -19,8 +19,8 @@ class DB
     private $dbhost = "localhost";
     private $dbuser = "root";
     private $dbpw = "root";
-    private $database = "Test3";
-    protected $table = "Klassenliste";
+    private $database = "wovi2";
+    protected $table = "pp2_project_master";
 
     public $log_db_errors;
     /**
