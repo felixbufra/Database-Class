@@ -146,8 +146,8 @@ class DB
     */
     public function delete($id)
     {
-        $deleteQuery = "DELETE FROM $this->table WHERE ID = '$id'";
-        $selectQuery = "SELECT * FROM $this->table WHERE ID = '$id'";
+        $deleteQuery = "DELETE FROM $this->table WHERE project_id = '$id'";
+        $selectQuery = "SELECT * FROM $this->table WHERE project_id = '$id'";
 
         $check = mysqli_query($this->link, $selectQuery);
         if(mysqli_num_rows($check)==1)

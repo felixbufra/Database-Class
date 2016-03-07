@@ -64,12 +64,12 @@ require_once( 'class.projekt.php' );
 // //
 // $insert = new Projekt();
 //  $values = array(
-//  "Vorname" => "Moritz",
-//  "Nachname" => "Mustermann",
-//  "Geburtsjahr" => 1991
+//  "project_id" => "123456",
+//  "project_name" => "Mustermann",
+//  "weatherAPI_name" => "dername"
 //     );
 // $result = $insert->insertData($values);
-//
+
 
 //====Update========
 
@@ -95,7 +95,7 @@ require_once( 'class.projekt.php' );
 //=======Delete========
 //
 // $deleteFromDb = new Projekt();
-// $id = "7";
+// $id = "123456";
 // $result = $deleteFromDb->deleteData($id);
 
 
