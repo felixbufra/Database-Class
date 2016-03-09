@@ -16,7 +16,7 @@ require_once( 'class.projekt.php' );
 // }
 
 // $resultByID = new Projekt();
-// $id = "173074";
+// $id = "162485";
 // $results = $resultByID->getID( $id );
 // foreach( $results as $row )
 // {
