@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bühring-Uhle.com</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/unslider.css">
+    <link rel="stylesheet" href="css/unslider-dots.css">
+      <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+      <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+
+      <!-- Static navbar -->
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Bühring-Uhle.com</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a class="aktiv" href="index.html">Start</a></li>
+              <li><a href="christoph.html">Christoph</a></li>
+              <li><a href="felix.html">Felix</a></li>
+              <li><a href="urlaubsbilder.html">Urlaubsbilder</a></li>
+              <li><a href="gaestebuch.php">Gästebuch</a></li>
+              <li><a href="kontakt.html">Kontakt</a></li>
+                <!-- <li><a href="register.php">Registrieren</a> </li> -->
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+      </nav>
+
+<div class="container">
+  <div class="row">
+      <div class="my-slider">
+
+      <ul>
+        <li><img src="img/beach.jpg" height="380px" width="100%"></li>
+        <li><img src="img/skyscrapers-chicago-night-buildings-sky-skyline-panorama-desktop-images-1920x540.jpg" height="380px"></li>
+        <li><img src="img/skyscraper.jpg" height="380px"></li>
+</ul>
+    </div>
+    <br><br>
+
+
+<div class="col-md-2"></div>
+
+      <div class="col-md-8">
+
+    <h1 class="index-h1">Wilkommen auf Bühring-Uhle.com!</h1>
+    <br>
+    <br>
+
+
+          <div class="index-slides">
+              <div>
+                  Guten Tag,<br>
+                  mein Name ist Christoph Bühring-Uhle, ich habe hier meine eigene Internetseite, mit einigen Bereichen,
+                  über die Navigation finden sie meinen selbstdarstellerischen Bereich, sowie den meines Sohnes, weitere
+                  Unterseiten wie Urlaubsbilder und Kontakt.
+                    <br><br>
+                  <button class="btn-default"><a href="christoph.html">-> Hier gehts zu mir</a></button>
+              </div>
+              <div>
+                  Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur. <br><br>
+              </div>
+              <div>
+                  Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br>
+                  Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident,
+                  sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+
+              </div>
+          </div>
+
+</div>
+</div>
+</div>
+
+<div class="container-fluid">
+<div class="row">
+
+<a href="impressum.html">Impressum</a> | <a href="kontakt.php">Kontakt</a>
+
+</div>
+</div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/unslider-min.js"></script>
+      <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+      <script>
+          $(document).ready(function(){
+            $('.index-slides').slick({
+            dots: true
+            });
+          })
+      </script>
+    <script>
+    $('.my-slider').unslider({
+
+animation: 'fade',
+autoplay: true,
+arrows: false
+  });
+	</script>
+
+  </body>
+</html>

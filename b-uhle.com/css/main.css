@@ -1,0 +1,144 @@
+  body
+  {
+    font-size: 16px;
+    font-style: normal;
+    font-family: sans-serif;
+    background-image: url("../img/orange.jpg");
+
+  }
+
+  a
+  {
+    text-decoration: none;
+    color: black;
+  }
+  a:hover
+  {
+    text-decoration: none;
+    color: #FFA200;
+  }
+
+  .navbar-default
+  {
+    background: white;
+    border: none;
+    color: black;
+  }
+
+.navbar-default .navbar-brand
+{
+  color: black;
+}
+
+.navbar-default .navbar-brand:hover
+{
+  color: #FFA200;
+}
+
+  .navbar-default .navbar-nav>li>a
+  {
+    color: black;
+  }
+
+  .navbar-default .navbar-nav>li>a.aktiv
+  {
+    border-bottom: 3px solid #FFA200;
+    color: #FFA200;
+  }
+
+  .navbar-default .navbar-nav>li>a:hover
+  {
+    color: #FFA200;
+  }
+
+  .container
+  {
+    background: white;
+  }
+
+  .container-fluid
+  {
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: white;
+  }
+
+  .full-size
+  {
+    width: 100%;
+    height: auto;
+  }
+
+  .index-h1
+  {
+    text-align: center;
+  }
+
+  .index-text
+  {
+
+  }
+
+.profil-img
+{
+  height: 150px;
+}
+
+  .christoph-h1
+  {
+    border-bottom: 1px solid black;
+    text-align: center;
+  }
+
+
+  .footer-dot
+  {
+    font-size: 22px;
+  }
+
+  #success_message
+  {
+     display: none;
+  }
+
+.my-slider{
+  height: 380px;
+}
+
+.index-slides
+{
+  padding: 5px;
+  min-height: 400px;
+  text-align: center;
+}
+
+.btn-default
+{
+  padding: 15px;
+}
+
+.btn-default:hover
+{
+  background: #FFA200;
+  color: black;
+}
+
+.btn-default>a:hover
+{
+  color: black;
+}
+
+.logout
+{
+  float: right;
+   padding-right: 30px;
+}
+
+.leben{
+  list-style: none;
+  padding-right: 5px;
+}
